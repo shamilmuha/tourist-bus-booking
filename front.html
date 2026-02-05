@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourist Bus Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🚌 Tourist Bus Booking</h1>
+    <h2>In Kerala,Wayanad<h2>
+    <p>Send your travel details and we will contact you</p>
+</header>
+
+<div class="container">
+
+    <section class="booking">
+        <h2>Tourist Bus Booking Request</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="from" placeholder="From Location" required>
+
+            <input type="text" id="to" placeholder="To Location" required>
+
+            <input type="date" id="date" required>
+
+            <input type="number"
+                   id="people"
+                   placeholder="Number of Members"
+                   min="1"
+                   required>
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="tel"
+                   id="phone"
+                   placeholder="Contact Number"
+                   pattern="[0-9]{10}"
+                   required>
+
+            <button type="submit">Send Booking Request</button>
+
+        </form>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
